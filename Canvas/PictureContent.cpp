@@ -118,8 +118,8 @@ bool PictureContent::loadFromFile(const QString & picFilePath, bool setUrl, bool
         resetContentsRatio();
     if (setName) {
         QString string = QFileInfo(picFilePath).fileName().section('.', 0, 0);
-        string = string.mid(0, 10);
-        setFrameText(string + tr("..."));
+        //string = string.mid(0, 10);
+        //setFrameText(string + tr("..."));
     }
     applyPostLoadEffects();
 
